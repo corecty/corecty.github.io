@@ -180,7 +180,7 @@
       </div>
 
       <div class="actions">
-        <a id="open-app" class="button primary" href="softreply://auth/callback">
+        <a id="open-app" class="button primary" href="softreply:///auth/callback">
           やわらか返信を開く / Open SoftReply
         </a>
         <a class="button secondary" href="https://softreplyapp.vercel.app/">
@@ -202,7 +202,7 @@
 
     <script>
       const callbackPath = window.location.search + window.location.hash;
-      const appUrl = "softreply://auth/callback" + callbackPath;
+      const appUrl = "softreply:///auth/callback" + callbackPath;
       const openApp = document.getElementById("open-app");
       openApp.setAttribute("href", appUrl);
 
